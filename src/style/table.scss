@@ -1,0 +1,41 @@
+.table__title {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: $dark-gray;
+	text-align: left;
+	padding-bottom: 16px;
+	padding: 0 24px 16px 24px;
+}
+
+.table__item {
+	font-size: 14px;
+	line-height: 18px;
+	color: #1B1C21;
+	padding: 23px 24px;
+	background-color: $white;
+	border-bottom: 1px solid $gray;
+	text-align: left;
+}
+
+.table__item--services {
+	text-align: left;
+}
+
+.table__item--radius {
+	border-radius: 6px;
+}
+
+.table__button {
+	display: flex;
+	padding: 0 12px;
+	justify-content: space-between;
+	margin-left: auto;
+	font-weight: 500;
+	width: 119px;
+	height: 32px;
+	font-size: 12px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: $white
+}

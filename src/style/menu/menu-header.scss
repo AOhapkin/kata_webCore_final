@@ -1,0 +1,18 @@
+.menu-header__button:nth-of-type(1) {
+	margin-right: 17px;
+}
+
+.menu-header__logo {
+	margin-right: auto;
+}
+
+.menu-header__button {
+	width: 40px;
+	height: 40px;
+}
+
+.menu-header__button--close {
+	@media (min-width: 1440px) {
+		display: none;
+  }
+}

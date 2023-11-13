@@ -1,0 +1,82 @@
+.main {
+	margin: 0 auto;
+	font-family: "TT Lakes", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	background-color: $light-gray;
+	width: 100%;
+
+	@media (min-width: 1440px) {
+		border-top: none;
+		width: 1120px;
+  }
+}
+
+.main__features {
+	overflow: hidden;
+}
+
+.main__about {
+	margin-top: 0;
+	padding: 0 16px;
+}
+
+.main__description {
+	margin: 0 0 16px;
+}
+
+.main__description--first-half {
+	display: none;
+
+	@media (min-width: 768px) {
+    display: inline;
+  }
+
+	@media (min-width: 1440px) {
+    display: inline;
+  }
+}
+
+.main__description--second-half {
+	display: none;
+
+	@media (min-width: 1440px) {
+    display: inline;
+  }
+}
+
+.main__button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	grid-gap: 12px;
+	font-size: 16px;
+	font-weight: 500;
+	box-sizing: border-box;
+	margin: 0 0 16px;
+}
+
+.main__picture {
+	padding-bottom: 24px;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+
+	@media (min-width: 768px) {
+		padding-bottom: 32px;
+    width: 360px;
+    height: 208px;
+    border-radius: 6px;
+    flex-basis: 0;
+  }
+
+	@media (min-width: 1440px) {
+		padding-bottom: 50px;
+		width: 531px;
+		height: 307px;
+		border-radius: 6px;
+		flex-basis: 0;
+		flex-grow: 1;
+  }
+}

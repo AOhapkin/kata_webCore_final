@@ -1,0 +1,58 @@
+.menu-main__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 32px;
+}
+
+.menu-main__item {
+	position: relative;
+	transition: all 0.6s;
+}
+
+.menu-main__link {
+	color: inherit;
+	text-decoration: none;
+}
+
+.menu-main__item:hover {
+	color: $base-purble;
+}
+
+.menu-main__item::before {
+	content: "";
+	width: 4px;
+	height: 32px;
+	background: $base-purble;
+	opacity: 0;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	position: absolute;
+	top: -5px;
+	left: -24px;
+}
+
+.menu-main__item:hover::before {
+	opacity: 0.6;
+}
+
+.menu-main__item--active {
+	color: $dark-gray;
+	position: relative;
+}
+
+.menu-main__item--active:hover {
+	color: $dark-gray;
+}
+
+.menu-main__item--active::before {
+	content: "";
+	width: 4px;
+	height: 32px;
+	background: $blue;
+	opacity: 1;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	position: absolute;
+	top: -5px;
+	left: -24px;
+}

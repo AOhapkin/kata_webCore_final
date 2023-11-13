@@ -1,0 +1,21 @@
+.languages__list {
+	display: flex;
+	flex-direction: row;
+	column-gap: 7px;
+}
+
+.languages__item {
+	transition: color 0.6s;
+}
+
+.languages__item:hover {
+	color: $base-purble;
+}
+
+.languages__item--active {
+	color: $dark-gray;
+}
+
+.languages__item--active:hover {
+	color: $dark-gray;
+}

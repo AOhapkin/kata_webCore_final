@@ -1,0 +1,35 @@
+.call-header__title {
+	margin: 0;
+	font-size: 28px;
+	font-weight: 700;
+	color: #1b1c21;
+}
+
+.call-header__title::before {
+	content: "";
+	width: 4px;
+	height: 40px;
+	background: $blue;
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+	position: absolute;
+	margin: -10px 0 0 -16px;
+
+	@media (min-width: 768px) {
+    margin: -10px 0 0 -32px;
+  }
+
+	@media (min-width: 1440px) {
+		margin: -10px 0 0 -32px;
+  }
+}
+
+.call-header__button {
+	width: 40px;
+	height: 40px;
+
+	@media (min-width: 768px) {
+		position: absolute;
+		top: 30px;
+		left: -60px;
+  }
+}

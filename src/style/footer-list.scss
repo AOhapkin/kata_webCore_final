@@ -1,0 +1,28 @@
+.footer-list {
+	padding: 16px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	gap: 16px;
+
+	@media (min-width: 768px) {
+		padding: 32px 24px;
+		flex-direction: row;
+  }
+
+	@media (min-width: 1440px) {
+		padding: 32px 32px;
+  }
+}
+
+.footer-list__item {
+	font-size: 14px;
+	line-height: 16px;
+	color: $dark-gray;
+
+	@media (min-width: 768px) {
+		max-width: 218px;
+  }
+}
