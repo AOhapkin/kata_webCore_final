@@ -1,0 +1,15 @@
+.page__body {
+  min-width: 320px;
+  font-family: "TT Lakes", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1c21;
+  background-color: #f8f8f8;
+
+	@media (min-width: 1440px) {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+  }
+}
