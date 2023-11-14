@@ -1,0 +1,50 @@
+.about__title {
+  position: relative;
+  color: #1B1C21;
+  font-family: "TT Lakes", "Arial", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+
+  margin: 0;
+  margin-bottom: 20px;
+  display: block;
+  padding-left: 18px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 33px;
+    padding-left: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 8px;
+    padding-left: 33px;
+  }
+}
+
+.about__title::before {
+  width: 4px;
+  height: 40px;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../img/svg/icons/highlight-icon.svg');
+}
+
+.about__page-nav {
+  margin-bottom: 10px;
+  padding: 0 16px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 15px;
+    padding-left: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 32px;
+  }
+}

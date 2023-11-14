@@ -1,3 +1,7 @@
+.page {
+  box-sizing: border-box;
+}
+
 .page__body {
   min-width: 320px;
   font-family: "TT Lakes", sans-serif;
@@ -11,5 +15,24 @@
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: center;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.page__main {
+  padding-top: 22px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    padding-top: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 42px;
   }
 }
