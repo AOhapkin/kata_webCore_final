@@ -447,13 +447,13 @@ a {
 
 a:focus-visible {
   outline: none;
-  box-shadow: 0 0 30px 4px $color-secondary-light-1;
+  box-shadow: 0 0 30px 4px #b8ffec;
 }
 
 .btn {
   &:focus-visible {
     outline: none;
-    box-shadow: 0 0 3px 3px $accent-color;
+    box-shadow: 0 0 3px 3px #ff3e79;
   }
 }
 
