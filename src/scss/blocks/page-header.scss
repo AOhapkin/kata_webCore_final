@@ -28,16 +28,8 @@
   display: none;
 
   @media (min-width: $tablet) {
-    margin-left: auto;
+    padding-right: 20px;
     display: flex;
     gap: 16px;
-  }
-}
-
-.page-header__divider:first-of-type {
-  display: none;
-
-  @media (min-width: $tablet) {
-    display: block;
   }
 }
