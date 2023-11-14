@@ -1,0 +1,19 @@
+.show-more-button {
+  position: relative;
+  padding-left: 32px;
+  color: #1b1c21;
+  font-family: 'TT Lakes', 'Arial', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+
+  background-image: url('../img/svg/icons/button-icon--show-more.svg');
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+.show-more-button--clicked {
+  background-image: url('../img/svg/icons/button-icon--show-less.svg');
+}
