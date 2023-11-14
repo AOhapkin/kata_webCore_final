@@ -9,25 +9,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Сервисный центр CSP</title>
   </head>
+  
   <body class="page__body">
-    <div class="page__wrapper">
-      <header class="page__header page-header">
-        <div class="page-header__controls">
-          <button class="button header-button header-button--burger-menu">
-            <span class="visually-hidden">Открыть меню сайта</span>
-          </button>
-          <a href="#" class="page-header__logo page-logo">
-            <span class="visually-hidden">Логотип сайта центра CPS</span>
-            <img
-              class="page-logo__img"
-              src="img/svg/site-logo.svg"
-              width="97"
-              height="51"
-              alt=""
-            />
-          </a>
-        </div>
-        <div class="page-header__controls">
+    <header class="page__header page-header">
+      <div class="page-header__wrapper">
+        <button class="button header-button header-button--burger-menu">
+          <span class="visually-hidden">Открыть меню сайта</span>
+        </button>
+        <div class="page-header__divider"></div>
+        <a href="#" class="page-header__logo page-logo">
+          <span class="visually-hidden">Логотип сайта центра CPS</span>
+          <img
+            class="page-logo__img"
+            src="img/svg/site-logo.svg"
+            width="97"
+            height="51"
+            alt=""
+          />
+        </a>
+        <div class="page-header__controls-group">
           <button class="button header-button header-button--phone">
             <span class="visually-hidden">Позвонить нам</span>
           </button>
@@ -37,18 +37,24 @@
           <button class="button header-button header-button--profile">
             <span class="visually-hidden">Зайти в личный кабинет</span>
           </button>
-          <button class="button header-button header-button--repair-order">
-            <span class="visually-hidden">Оставить заявку</span>
-          </button>
-          <button class="button header-button header-button--check-status">
-            <span class="visually-hidden">Посмотреть статус ремонта</span>
-          </button>
         </div>
-      </header>
+        <div class="page-header__divider"></div>
+        <button class="button header-button header-button--repair-order">
+          <span class="visually-hidden">Оставить заявку</span>
+        </button>
+        <button class="button header-button header-button--check-status">
+          <span class="visually-hidden">Посмотреть статус ремонта</span>
+        </button>
+      </div>
+    </header>
+    <div class="page__wrapper">
+
+      // side-menu
+
       <main class="page__main page-main">
-        <div class="page-main__header">
-          <h2 class="page-title page-main__title">Услуги и сервисы</h2>
-          <div class="order-controls">
+        <h1 class="visually-hidden">Сайт компании CPS – центр по ремонту техники Dell</h1>
+        <section class="about">
+          <div class="order-controls about__order-controls">
             <a class="order-controls__link">
               <span class="order-controls__button-label">Оставить заявку</span>
               <span class="button order-controls__button order-controls__button--repair-order"></span>
@@ -58,69 +64,72 @@
               <span class="button order-controls__button order-controls__button--check-status"></span>
             </a>
           </div>
-        </div>
-        <div class="page-main__nav page-nav">
-          <ul class="list page-nav__list">
-            <li class="page-nav__item">
-              <a class="page-nav__link page-nav__link--current" href="#"
-                >Ремонтируемые устройства</a
-              >
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="#">Дополнительные услуги</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="#">Цены на услуги</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="#">Адреса сервисных центров</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="#">Специальные цены</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="#">Отзывы</a>
-            </li>
-          </ul>
-        </div>
-        <section class="about">
-          <div class="about__container">
-            <div class="about__text-wrapper">
-              <p class="about__text-content text-block"
-                >Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя.</p
-              >
-              <p class="about__text-content text-block"
-                >Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера, что подтверждает большое количество постоянных клиентов.
-                Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                очередь, советуют нас родным и близким.</p
-              >
-            </div>
-            <button class="button show-more-button">Читать далее</button>
+
+          <h2 class="about__title">Услуги и сервисы</h2>
+
+          <div class="about__page-nav page-nav">
+            <ul class="page-nav__list">
+              <li class="page-nav__item">
+                <a class="page-nav__link page-nav__link--current">Ремонтируемые устройства</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="#">Дополнительные услуги</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="#">Цены на услуги</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="#">Адреса сервисных центров</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="#">Специальные цены</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="#">Отзывы</a>
+              </li>
+            </ul>
           </div>
-          <div class="about__container">
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="img/about--desktop.jpg 1x, img/about--desktop@2x.jpg 2x"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="img/about--tablet.jpg 1x, img/about--tablet@2x.jpg 2x"
-              />
-              <img
-                class="about__image"
-                src="img/about--mobile.jpg"
-                srcset="img/about--mobile@2x.jpg"
-                width="320"
-                height="176"
-                alt=""
-              />
-            </picture>
+          <div class="about__description">
+            <div class="about__container">
+              <div class="about__text-wrapper">
+                <p class="about__text-content text-block"
+                  >Мы являемся авторизованным сервисным центром по ремонту техники
+                  Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                  официальной гарантией производителя.</p
+                >
+                <p class="about__text-content text-block"
+                  >Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                  партнера, что подтверждает большое количество постоянных клиентов.
+                  Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                  очередь, советуют нас родным и близким.</p
+                >
+              </div>
+              <button class="button show-more-button">Читать далее</button>
+            </div>
+            <div class="about__container">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="/src/img/about--desktop.jpg 1x, /src/img/about--desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="/src/img/about--tablet.jpg 1x, /src/img/about--tablet@2x.jpg 2x"
+                />
+                <img
+                  class="about__image"
+                  src="/src/img/about--mobile.jpg"
+                  srcset="/src/img/about--mobile@2x.jpg"
+                  width="320"
+                  height="176"
+                  alt=""
+                />
+              </picture>
+            </div>
           </div>
         </section>
+
+        
         <section class="brands">
           <h3 class="brands__section-title section-title">Ремонт техники различных брендов</h3>
           <!-- Slider main container -->
@@ -132,8 +141,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--lenovo.png"
-                    srcset="/assets/img/brands__logo--lenovo@2x.png"
+                    src="/src/img/brands__logo--lenovo.png"
+                    srcset="/src/img/brands__logo--lenovo@2x.png"
                     width="108"
                     height="32"
                     alt="Lenovo"
@@ -145,8 +154,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--samsung.png"
-                    srcset="/assets/img/brands__logo--samsung@2x.png"
+                    src="/src/img/brands__logo--samsung.png"
+                    srcset="/src/img/brands__logo--samsung@2x.png"
                     width="116"
                     height="38"
                     alt="Samsung"
@@ -158,8 +167,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--apple.png"
-                    srcset="/assets/img/brands__logo--apple@2x.png"
+                    src="/src/img/brands__logo--apple.png"
+                    srcset="/src/img/brands__logo--apple@2x.png"
                     width="44"
                     height="44"
                     alt="Apple"
@@ -171,8 +180,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--bosch.png"
-                    srcset="/assets/img/brands__logo--bosch@2x.png"
+                    src="/src/img/brands__logo--bosch.png"
+                    srcset="/src/img/brands__logo--bosch@2x.png"
                     width="128"
                     height="28"
                     alt="Bosch"
@@ -184,8 +193,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--hp.png"
-                    srcset="/assets/img/brands__logo--hp@2x.png"
+                    src="/src/img/brands__logo--hp.png"
+                    srcset="/src/img/brands__logo--hp@2x.png"
                     width="52"
                     height="52"
                     alt="HP"
@@ -197,8 +206,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--acer.png"
-                    srcset="/assets/img/brands__logo--acer@2x.png"
+                    src="/src/img/brands__logo--acer.png"
+                    srcset="/src/img/brands__logo--acer@2x.png"
                     width="94"
                     height="24"
                     alt="Acer"
@@ -210,8 +219,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--viewsonic.png"
-                    srcset="/assets/img/brands__logo--viewsonic@2x.png"
+                    src="/src/img/brands__logo--viewsonic.png"
+                    srcset="/src/img/brands__logo--viewsonic@2x.png"
                     width="128"
                     height="21"
                     alt="Viewsonic"
@@ -223,8 +232,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--sony.png"
-                    srcset="/assets/img/brands__logo--sony@2x.png"
+                    src="/src/img/brands__logo--sony.png"
+                    srcset="/src/img/brands__logo--sony@2x.png"
                     width="128"
                     height="25"
                     alt="sony"
@@ -236,8 +245,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--lenovo.png"
-                    srcset="/assets/img/brands__logo--lenovo@2x.png"
+                    src="/src/img/brands__logo--lenovo.png"
+                    srcset="/src/img/brands__logo--lenovo@2x.png"
                     width="108"
                     height="32"
                     alt="Lenovo"
@@ -249,8 +258,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--samsung.png"
-                    srcset="/assets/img/brands__logo--samsung@2x.png"
+                    src="/src/img/brands__logo--samsung.png"
+                    srcset="/src/img/brands__logo--samsung@2x.png"
                     width="116"
                     height="38"
                     alt="Samsung"
@@ -262,8 +271,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--apple.png"
-                    srcset="/assets/img/brands__logo--apple@2x.png"
+                    src="/src/img/brands__logo--apple.png"
+                    srcset="/src/img/brands__logo--apple@2x.png"
                     width="44"
                     height="44"
                     alt="Apple"
@@ -275,8 +284,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--bosch.png"
-                    srcset="/assets/img/brands__logo--bosch@2x.png"
+                    src="/src/img/brands__logo--bosch.png"
+                    srcset="/src/img/brands__logo--bosch@2x.png"
                     width="128"
                     height="28"
                     alt="Bosch"
@@ -288,8 +297,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--hp.png"
-                    srcset="/assets/img/brands__logo--hp@2x.png"
+                    src="/src/img/brands__logo--hp.png"
+                    srcset="/src/img/brands__logo--hp@2x.png"
                     width="52"
                     height="52"
                     alt="HP"
@@ -301,8 +310,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--acer.png"
-                    srcset="/assets/img/brands__logo--acer@2x.png"
+                    src="/src/img/brands__logo--acer.png"
+                    srcset="/src/img/brands__logo--acer@2x.png"
                     width="94"
                     height="24"
                     alt="Acer"
@@ -314,8 +323,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--viewsonic.png"
-                    srcset="/assets/img/brands__logo--viewsonic@2x.png"
+                    src="/src/img/brands__logo--viewsonic.png"
+                    srcset="/src/img/brands__logo--viewsonic@2x.png"
                     width="128"
                     height="21"
                     alt="Viewsonic"
@@ -327,8 +336,8 @@
                 <a class="brands__card">
                   <img
                     class="brands-swiper__image"
-                    src="/assets/img/brands__logo--sony.png"
-                    srcset="/assets/img/brands__logo--sony@2x.png"
+                    src="/src/img/brands__logo--sony.png"
+                    srcset="/src/img/brands__logo--sony@2x.png"
                     width="128"
                     height="25"
                     alt="sony"
