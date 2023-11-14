@@ -1,0 +1,62 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contacts__mail {
+  margin-bottom: 14px;
+  color: #1B1C21;
+  font-family: "TT Lakes", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  text-decoration: none;
+
+  transition-duration: 0.5s;
+}
+
+.contacts__mail:focus, .contacts__mail:hover {
+  text-decoration: underline;
+  transform: scale(1.5) translateX(15%);
+}
+
+.contacts__mail:active {
+  text-decoration: none;
+}
+
+.contacts__phone {
+  display: block;
+  width: max-content;
+  color: #1B1C21;
+  font-family: "TT Lakes", "Arial", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.6px;
+  text-decoration: none;
+
+  transition-duration: 0.5s;
+}
+
+.contacts__phone:focus, .contacts__phone:hover {
+  color: #ff3e79;
+  opacity: 0.7;
+  box-shadow: 0 0 1px 2px #ff3e79;
+}
+
+.contacts__phone:active {
+  opacity: 0.9;
+}
