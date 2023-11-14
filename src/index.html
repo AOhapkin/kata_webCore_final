@@ -52,9 +52,9 @@
       // side-menu
 
       <main class="page__main page-main">
-        <div class="page-main__header">
-          <h2 class="page-title page-main__title">Услуги и сервисы</h2>
-          <div class="order-controls">
+        <h1 class="visually-hidden">Сайт компании CPS – центр по ремонту техники Dell</h1>
+        <section class="about">
+          <div class="order-controls about__order-controls">
             <a class="order-controls__link">
               <span class="order-controls__button-label">Оставить заявку</span>
               <span class="button order-controls__button order-controls__button--repair-order"></span>
@@ -64,69 +64,72 @@
               <span class="button order-controls__button order-controls__button--check-status"></span>
             </a>
           </div>
-        </div>
-        <div class="page-main__nav page-nav">
-          <ul class="list page-nav__list">
-            <li class="page-nav__item">
-              <a class="page-nav__link page-nav__link--current" href="#"
-                >Ремонтируемые устройства</a
-              >
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="#">Дополнительные услуги</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="#">Цены на услуги</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="#">Адреса сервисных центров</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="#">Специальные цены</a>
-            </li>
-            <li class="page-nav__item">
-              <a class="page-nav__link" href="#">Отзывы</a>
-            </li>
-          </ul>
-        </div>
-        <section class="about">
-          <div class="about__container">
-            <div class="about__text-wrapper">
-              <p class="about__text-content text-block"
-                >Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя.</p
-              >
-              <p class="about__text-content text-block"
-                >Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера, что подтверждает большое количество постоянных клиентов.
-                Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                очередь, советуют нас родным и близким.</p
-              >
-            </div>
-            <button class="button show-more-button">Читать далее</button>
+
+          <h2 class="about__title">Услуги и сервисы</h2>
+
+          <div class="about__page-nav page-nav">
+            <ul class="page-nav__list">
+              <li class="page-nav__item">
+                <a class="page-nav__link page-nav__link--current">Ремонтируемые устройства</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="#">Дополнительные услуги</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="#">Цены на услуги</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="#">Адреса сервисных центров</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="#">Специальные цены</a>
+              </li>
+              <li class="page-nav__item">
+                <a class="page-nav__link" href="#">Отзывы</a>
+              </li>
+            </ul>
           </div>
-          <div class="about__container">
-            <picture>
-              <source
-                media="(min-width: 1440px)"
-                srcset="img/about--desktop.jpg 1x, img/about--desktop@2x.jpg 2x"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="img/about--tablet.jpg 1x, img/about--tablet@2x.jpg 2x"
-              />
-              <img
-                class="about__image"
-                src="img/about--mobile.jpg"
-                srcset="img/about--mobile@2x.jpg"
-                width="320"
-                height="176"
-                alt=""
-              />
-            </picture>
+          <div class="about__description">
+            <div class="about__container">
+              <div class="about__text-wrapper">
+                <p class="about__text-content text-block"
+                  >Мы являемся авторизованным сервисным центром по ремонту техники
+                  Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                  официальной гарантией производителя.</p
+                >
+                <p class="about__text-content text-block"
+                  >Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                  партнера, что подтверждает большое количество постоянных клиентов.
+                  Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                  очередь, советуют нас родным и близким.</p
+                >
+              </div>
+              <button class="button show-more-button">Читать далее</button>
+            </div>
+            <div class="about__container">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="img/about--desktop.jpg 1x, img/about--desktop@2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/about--tablet.jpg 1x, img/about--tablet@2x.jpg 2x"
+                />
+                <img
+                  class="about__image"
+                  src="img/about--mobile.jpg"
+                  srcset="img/about--mobile@2x.jpg"
+                  width="320"
+                  height="176"
+                  alt=""
+                />
+              </picture>
+            </div>
           </div>
         </section>
+
+        
         <section class="brands">
           <h3 class="brands__section-title section-title">Ремонт техники различных брендов</h3>
           <!-- Slider main container -->
