@@ -1,0 +1,11 @@
+.page-logo {
+  transition-duration: 0.5s;
+}
+
+.page-logo:focus, .page-logo:hover {
+  opacity: 0.7;
+}
+
+.page-logo:active {
+  opacity: 0.9;
+}
