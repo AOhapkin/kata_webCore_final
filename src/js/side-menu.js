@@ -1,3 +1,5 @@
+//side menu
+
 const burgerButton = document.querySelector('.header-button--burger-menu');
 const sideMenu = document.querySelector('.side-menu');
 const closeMenuButton = sideMenu.querySelector('.header-button--close-menu');
@@ -11,6 +13,7 @@ function onBurgerButtonClick(evt) {
   closeMenuButton.addEventListener('click', onCloseMenuButtonClick);
   menuOverlay.classList.add('page__menu-overlay--show');
   menuOverlay.addEventListener('click', onMenuOverlayClick);
+  window.addEventListener('keydown', onSideMenuEscButtonClick);
 }
 
 function onCloseMenuButtonClick(evt) {
@@ -19,6 +22,7 @@ function onCloseMenuButtonClick(evt) {
   closeMenuButton.removeEventListener('click', onCloseMenuButtonClick);
   menuOverlay.classList.remove('page__menu-overlay--show');
   menuOverlay.removeEventListener('click', onMenuOverlayClick);
+  window.removeEventListener('keydown', onSideMenuEscButtonClick);
 }
 
 function onMenuOverlayClick(evt) {
@@ -27,4 +31,16 @@ function onMenuOverlayClick(evt) {
   closeMenuButton.removeEventListener('click', onCloseMenuButtonClick);
   menuOverlay.classList.remove('page__menu-overlay--show');
   menuOverlay.removeEventListener('click', onMenuOverlayClick);
+  window.removeEventListener('keydown', onSideMenuEscButtonClick);
+}
+
+function onSideMenuEscButtonClick(evt) {
+  evt.preventDefault();
+  if (evt.keyCode === 27) {
+    sideMenu.classList.remove('side-menu--open');
+    closeMenuButton.removeEventListener('click', onCloseMenuButtonClick);
+    menuOverlay.classList.remove('page__menu-overlay--show');
+    menuOverlay.removeEventListener('click', onMenuOverlayClick);
+    window.removeEventListener('keydown', onSideMenuEscButtonClick);
+  }
 }
