@@ -1,10 +1,14 @@
-
+import Swiper from 'swiper'
+import { Pagination } from 'swiper/modules'
+// import 'swiper/swiper-bundle.min.css'
+// import 'swiper/modules/pagination.min.css'
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/modules/pagination.min.css'
 
 if (typeof window !== 'undefined') {
   window.addEventListener('DOMContentLoaded', () => {
     const resizableSwiper = (breakpoint, swiperClass, swiperSettings) => {
-      let swiper;
-      console.log('Works!')
+      let swiper
 
       breakpoint = window.matchMedia(breakpoint)
 
