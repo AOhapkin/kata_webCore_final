@@ -6,16 +6,22 @@
   height: 100%;
 
   z-index: 20;
-  display: none;
+  // display: none;
 
   background: #ffffff;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
+
+  visibility: hidden;
+  transform: translateX(-120%);
+  transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
 
   @media (min-width: $tablet) {
     width: 320px;
   }
   
   @media (min-width: $desktop) {
+    visibility: visible;
+    transform: none;
     height: 100vh;
     display: block;
     box-shadow: none;
@@ -25,7 +31,9 @@
 }
 
 .side-menu--open {
-  display: block;
+  // display: block;
+  visibility: visible;
+  transform: none;
 }
 
 .side-menu__wrapper {
