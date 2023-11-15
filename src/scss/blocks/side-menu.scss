@@ -16,6 +16,7 @@
   }
   
   @media (min-width: $desktop) {
+    display: block;
     box-shadow: none;
     position: relative;
     grid-area: side-menu;
