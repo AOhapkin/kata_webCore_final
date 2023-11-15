@@ -7,3 +7,19 @@
   flex-direction: column;
   gap: 32px;
 }
+
+.nav-list__item {
+  position: relative;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.nav-list__item--current::before {
+  width: 4px;
+  height: 100%;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url('../img/svg/icons/highlight-icon.svg');
+}
