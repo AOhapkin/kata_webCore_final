@@ -49,6 +49,7 @@
 }
 
 .page__overlay {
+  display: none;
   position: absolute;
   z-index: 10;
   width: 100%;
@@ -61,7 +62,8 @@
   }
 }
 
-.page__overlay--hidden {
+.page__overlay--show {
+  display: block;
   @media (min-width: $desktop) {
     display: none;
   }
