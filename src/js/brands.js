@@ -35,7 +35,7 @@ if (typeof window !== 'undefined') {
       slidesPerView: 1.3,
       modules: [Pagination],
       pagination: {
-        el: '.swiper-pagination',
+        el: '.brands__swiper-pagination',
         dynamicBullets: true,
         dynamicMainBullets: 7,
         clickable: true
