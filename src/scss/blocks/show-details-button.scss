@@ -5,17 +5,20 @@
   position: relative;
   border: 3px solid #ff3e79;
   border-radius: 100%;
+  background-image: url('../img/svg/icons/button-icon--arrow-right--red.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
-.show-details-button::before {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%) rotate(45deg);
-  content: '';
-  width: 8px;
-  height: 8px;
-  border-top: 3px solid #ff3e79;
-  border-right: 3px solid #ff3e79;
-}
+// .show-details-button::before {
+//   display: block;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translateX(-50%) translateY(-50%) rotate(45deg);
+//   content: '';
+//   width: 8px;
+//   height: 8px;
+//   border-top: 3px solid #ff3e79;
+//   border-right: 3px solid #ff3e79;
+// }
