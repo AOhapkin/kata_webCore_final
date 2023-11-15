@@ -23,3 +23,19 @@
   top: 0;
   background-image: url('../img/svg/icons/highlight-icon.svg');
 }
+
+.nav-list__link {
+  display: block;
+  color: #1b1c21;
+  text-decoration: none;
+}
+
+.nav-list__link:focus,
+.nav-list__link:hover {
+  color: #ff3e79;
+  text-decoration: underline;
+}
+
+.nav-list__link:active {
+  text-decoration: none;
+}
