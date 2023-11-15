@@ -39,6 +39,10 @@
 .header-button--close-menu {
   background-image: url('../img/svg/icons/button-icon--close-menu.svg');
   background-size: 16px 16px;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
 }
 
 .header-button--search {
