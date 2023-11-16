@@ -60,7 +60,7 @@ if (typeof window !== 'undefined') {
 
 const showMoreBrandsButton = document.querySelector('.brands__show-more-button')
 const brands = document.querySelector('.brands__swiper')
-const showMoreIcon = document.querySelector('.show-more-button::before')
+const showMoreIcon = document.querySelector('.brands__show-more-button::before')
 let isBrandsCollapsed = true
 
 showMoreBrandsButton.addEventListener('click', onShowMoreBrandsButtonClick)
