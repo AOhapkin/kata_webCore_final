@@ -60,22 +60,22 @@ if (typeof window !== 'undefined') {
 
 // show all button
 
-const showMoreTechButton = document.querySelector('.brands__show-more-button')
-const tech = document.querySelector('.brands__swiper')
-const showMoreIcon = document.querySelector('.show-more-button::before')
+const showMoreTechButton = document.querySelector('.tech-types__show-more-button')
+const tech = document.querySelector('.tech-types__swiper')
+const showMoreIcon = document.querySelector('.tech-types__show-more-button::before')
 let isTechCollapsed = true
 
-showMoreBrandsButton.addEventListener('click', onShowMoreBrandsButtonClick)
+showMoreTechButton.addEventListener('click', onShowMoreTechButtonClick)
 
-function onShowMoreBrandsButtonClick(evt) {
+function onShowMoreTechButtonClick(evt) {
   evt.preventDefault()
-  brands.classList.toggle('brands__swiper--collapse')
-  showMoreBrandsButton.classList.toggle('show-more-button--clicked')
-  if (isBrandsCollapsed) {
-    showMoreBrandsButton.textContent = 'Скрыть'
-    isBrandsCollapsed = false
+  tech.classList.toggle('tech-types__swiper--collapse')
+  showMoreTechButton.classList.toggle('show-more-button--clicked')
+  if (isTechCollapsed) {
+    showMoreTechButton.textContent = 'Скрыть'
+    isTechCollapsed = false
   } else {
-    showMoreBrandsButton.textContent = 'Показать все'
-    isBrandsCollapsed = true
+    showMoreTechButton.textContent = 'Показать все'
+    isTechCollapsed = true
   }
 }
