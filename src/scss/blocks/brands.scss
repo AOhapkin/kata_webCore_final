@@ -10,7 +10,7 @@
 
 .brands__section-title {
   @media (min-width: $tablet) {
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop) {
@@ -119,6 +119,7 @@
 
 .brands__slide:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .brands__card img {

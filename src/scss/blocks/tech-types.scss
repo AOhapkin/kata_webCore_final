@@ -10,10 +10,17 @@
 
 .tech-types__swiper {
   position: relative;
+  height: 224px;
 
   @media (min-width: $tablet) {
     transition-duration: 0.5s;
     margin-bottom: 20px;
+  }
+}
+
+.tech-types__swiper--collapse {
+  @media (min-width: $tablet) {
+    height: 208px;
   }
 }
 
@@ -76,10 +83,30 @@
   }
 }
 
+.tech-types .tech-types__slide {
+  width: 240px;
+  height: 124px;
+
+  // height: 72px;
+  display: flex;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+
+  @media (min-width: $tablet) {
+    width: 224px;
+  }
+}
+
+.tech-types__slide:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .tech-types__card {
   padding: 16px;
-  width: 214px;
-  height: 120px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -89,7 +116,7 @@
   border: 1px solid #eaeaea;
 
   @media (min-width: $tablet) {
-    width: 224px;
+    // width: 224px;
 
   }
 }
