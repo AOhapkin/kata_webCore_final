@@ -57,3 +57,25 @@ if (typeof window !== 'undefined') {
     })
   })
 }
+
+// show all button
+
+const showMoreTechButton = document.querySelector('.tech-types__show-more-button')
+const tech = document.querySelector('.tech-types__swiper')
+const showMoreIcon = document.querySelector('.tech-types__show-more-button::before')
+let isTechCollapsed = true
+
+showMoreTechButton.addEventListener('click', onShowMoreTechButtonClick)
+
+function onShowMoreTechButtonClick(evt) {
+  evt.preventDefault()
+  tech.classList.toggle('tech-types__swiper--collapse')
+  showMoreTechButton.classList.toggle('show-more-button--clicked')
+  if (isTechCollapsed) {
+    showMoreTechButton.textContent = 'Скрыть'
+    isTechCollapsed = false
+  } else {
+    showMoreTechButton.textContent = 'Показать все'
+    isTechCollapsed = true
+  }
+}
