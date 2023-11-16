@@ -11,4 +11,8 @@
   letter-spacing: -0.2px;
   text-transform: uppercase;
   background: linear-gradient(-270deg, #f8f8f8 0%, #fff 98.61%);
+
+  @media (min-width: $tablet) {
+    padding-left: 0;
+  }
 }
