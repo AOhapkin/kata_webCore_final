@@ -48,7 +48,7 @@
   grid-area: page-footer;
 }
 
-.page__overlay {
+.page__menu-overlay {
   display: none;
   position: absolute;
   z-index: 10;
@@ -62,8 +62,9 @@
   }
 }
 
-.page__overlay--show {
+.page__menu-overlay--show {
   display: block;
+
   @media (min-width: $desktop) {
     display: none;
   }

@@ -1,3 +1,4 @@
 import '../scss/style.scss'
-
-console.log('Works!')
+import './brands.js'
+import './side-menu.js'
+import './tech-types.js'
