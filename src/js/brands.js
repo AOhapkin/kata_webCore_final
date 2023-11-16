@@ -1,7 +1,5 @@
 import Swiper from 'swiper'
 import { Pagination } from 'swiper/modules'
-// import 'swiper/swiper-bundle.min.css'
-// import 'swiper/modules/pagination.min.css'
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/modules/pagination.min.css'
 
