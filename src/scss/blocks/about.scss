@@ -3,6 +3,18 @@
   padding-bottom: 16px;
 }
 
+.about__order-controls {
+  display: none;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    display: flex;
+    gap: 35px;
+    top: 43px;
+    right: 40px;
+  }
+}
+
 .about__title {
   position: relative;
   color: #1B1C21;
