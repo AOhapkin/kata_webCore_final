@@ -1,0 +1,23 @@
+.prices-button {
+  padding: 4px 16px;
+  padding-right: 0;
+  border-radius: 16px;
+  background-color: #FF3E79;
+  text-align: left;
+  color: #ffffff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 200% */
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+
+  background-image: url('../img/svg/icons/button-icon--arrow-right--white.svg');
+  background-size: 7px 10px;
+  background-repeat: no-repeat;
+  background-position: 95px center;
+}
+
+.prices-button:hover {
+  background-color: #8a2644;
+}
