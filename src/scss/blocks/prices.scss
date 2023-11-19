@@ -25,7 +25,7 @@
 }
 
 .prices__swiper {
-  background: pink;
+  // background: pink;
   margin-bottom: 20px;
 
   @media (min-width: $tablet) {
@@ -40,6 +40,7 @@
 .prices__swiper-wrapper {
   padding: 16px;
   padding-right: 0;
+  padding-bottom: 45px;
 
   @media (min-width: $tablet) {
     flex-direction: column;
@@ -51,30 +52,58 @@
 }
 
 .prices__slide {
-  background-color: aquamarine;
-  
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.prices__slide:hover {
+  opacity: 0.7;
 }
 
 .prices__card {
-  min-height: 200px;
+  // width: 260px;
+  // min-height: 200px;
   position: relative;
   display: flex;
   flex-direction: column;
   // flex-wrap: wrap;
-  gap: 16px;
-  padding: 16px;
+  gap: 25px;
+  padding: 20px;
+
+  color: #1B1C21;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: 0.2px;
 }
 
 .prices__name span {
   display: block;
+  color: #7E7E82;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
 }
 
 .prices__value span {
   display: block;
+  color: #7E7E82;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
 }
 
 .prices__time span {
   display: block;
+  color: #7E7E82;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
 }
 
 .prices__button {
