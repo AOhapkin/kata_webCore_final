@@ -194,6 +194,12 @@
   }
 }
 
+.prices__swiper .prices__swiper-pagination {
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
 .prices__text {
   width: 90%;
   margin-bottom: 13px;
