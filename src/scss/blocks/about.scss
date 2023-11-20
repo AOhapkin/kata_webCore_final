@@ -1,6 +1,19 @@
 .about {
   border-bottom: 1px solid #d9fff5;
   padding-bottom: 16px;
+  position: relative;
+}
+
+.about__order-controls {
+  display: none;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    display: flex;
+    gap: 35px;
+    top: -3px;
+    right: 27px;
+  }
 }
 
 .about__title {
@@ -63,6 +76,10 @@
     flex-direction: row;
     gap: 5px;
     padding: 0 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 33px;
   }
 }
 
