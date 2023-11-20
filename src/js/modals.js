@@ -5,13 +5,19 @@ const sideMenu = document.querySelector('.side-menu');
 const closeMenuButton = sideMenu.querySelector('.header-button--close-menu');
 const menuOverlay = document.querySelector('.page__menu-overlay');
 const feedbackButton = sideMenu.querySelector('.header-button--chat');
+const callButton = sideMenu.querySelector('.header-button--phone');
 
 const feedbackModal = document.querySelector('.modal--feedback');
-const feedbackModalOverlay = feedbackModal.querySelector('.modal__wrapper');
 const feedbackModalCloseButton = feedbackModal.querySelector('.modal__close-button');
+
+const callModal = document.querySelector('.modal--call');
+const callModalCloseButton = callModal.querySelector('.modal__close-button');
+
+// const callModal = document.querySelector('.modal--call');
 
 burgerButton.addEventListener('click', onBurgerButtonClick);
 feedbackButton.addEventListener('click', onFeedbackButtonClick);
+callButton.addEventListener('click', onCallButtonClick);
 window.addEventListener('keydown', onWindowEscButtonClick);
 
 function onBurgerButtonClick(evt) {
@@ -45,6 +51,7 @@ function onWindowEscButtonClick(evt) {
     sideMenuClose();
     feedbackModal.classList.remove('modal--open');
     closeFeedbackModal();
+    closeCallModal();
   }
 }
 
@@ -67,9 +74,29 @@ function showFeedbackModal() {
 
 function closeFeedbackModal() {
   feedbackModal.classList.remove('modal--open');
-  feedbackModalOverlay.removeEventListener('click', onFeedbackModalOverlayClick);
 }
 
 // modal--call
 
+function onCallButtonClick() {
+  showCallModal();
+}
 
+function onCallModalClick(evt) {
+  console.log('here');
+  console.log(evt.target);
+
+  if (evt.target === callModalCloseButton) {
+    closeCallModal();
+  }
+}
+
+function showCallModal() {
+
+  callModal.classList.add('modal--open');
+  callModalCloseButton.addEventListener('click', onCallModalClick);
+}
+
+function closeCallModal() {
+  callModal.classList.remove('modal--open');
+}
