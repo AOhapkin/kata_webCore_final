@@ -24,7 +24,8 @@
   height: 100%;
   position: relative;
 
-  background: pink;
+  background: #FFF;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.30), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
 
   @media (min-width: $tablet) {
     padding-top: 30px;
