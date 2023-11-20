@@ -1,0 +1,25 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.page-footer__column {
+  text-align: center;
+}
+
+.page-footer__text {
+  color: #7E7E82;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+}
+
+.page-footer__link:hover {
+  color: rgb(149, 0, 112);
+  text-decoration: underline;
+  cursor: pointer;
+}
