@@ -12,10 +12,15 @@
     justify-content: space-between;
     align-items: start;
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
 }
 
 .page-footer__column {
-  text-align: center;
+  text-align: left;
 
   @media (min-width: $tablet) {
     width: 32%;
