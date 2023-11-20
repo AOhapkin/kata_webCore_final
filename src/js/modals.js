@@ -11,6 +11,8 @@ const feedbackModalOverlay = feedbackModal.querySelector('.modal__wrapper');
 const feedbackModalCloseButton = feedbackModal.querySelector('.modal__close-button');
 
 burgerButton.addEventListener('click', onBurgerButtonClick);
+feedbackButton.addEventListener('click', onFeedbackButtonClick);
+window.addEventListener('keydown', onWindowEscButtonClick);
 
 function onBurgerButtonClick(evt) {
   evt.preventDefault();
@@ -18,8 +20,6 @@ function onBurgerButtonClick(evt) {
   closeMenuButton.addEventListener('click', onCloseMenuButtonClick);
   menuOverlay.classList.add('page__menu-overlay--show');
   menuOverlay.addEventListener('click', onMenuOverlayClick);
-  window.addEventListener('keydown', onSideMenuEscButtonClick);
-  feedbackButton.addEventListener('click', onFeedbackButtonClick);
 }
 
 function onCloseMenuButtonClick(evt) {
@@ -37,15 +37,14 @@ function sideMenuClose() {
   closeMenuButton.removeEventListener('click', onCloseMenuButtonClick);
   menuOverlay.classList.remove('page__menu-overlay--show');
   menuOverlay.removeEventListener('click', onMenuOverlayClick);
-  window.removeEventListener('keydown', onSideMenuEscButtonClick);
-  feedbackButton.removeEventListener('click', onFeedbackButtonClick);
 }
 
-function onSideMenuEscButtonClick(evt) {
+function onWindowEscButtonClick(evt) {
   evt.preventDefault();
   if (evt.keyCode === 27) {
     sideMenuClose();
     feedbackModal.classList.remove('modal--open');
+    closeFeedbackModal();
   }
 }
 
