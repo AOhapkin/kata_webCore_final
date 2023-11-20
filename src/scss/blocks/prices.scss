@@ -11,7 +11,10 @@
     padding-bottom: 30px;
   }
 
-
+  @media (min-width: $desktop) {
+    padding-left: 25px;
+    padding-right: 22px;
+  }
 }
 
 .prices__section-title {
@@ -27,19 +30,22 @@
 }
 
 .prices .prices__swiper {
-  // background: pink;
   // margin-bottom: 10px;
 
   @media (min-width: $tablet) {
     padding-top: 45px;
     padding-right: 24px;
     margin-bottom: 25px;
-    border-radius: 6px;
+    // border-radius: 6px;
     overflow: visible;
   }
 
   @media (min-width: $desktop) {
+    margin: 0;
     margin-bottom: 30px;
+    width: 1029px;
+    padding-right: 0;
+    
   }
 }
 
@@ -58,6 +64,13 @@
     // box-sizing: border-box;
     transform: none;
   }
+
+  @media (min-width: $desktop) {
+    // overflow: hidden;
+    padding-left: 0;
+    border-radius: 6px;
+    width: 1030px;
+  }
 }
 
 // .prices__header {
@@ -74,7 +87,7 @@
 //   padding: 16px;
 // }
 
-.prices__slide {
+.prices__swiper-wrapper .prices__slide {
   background-color: #ffffff;
   border-radius: 6px;
 
@@ -83,6 +96,12 @@
     // padding-right: 20px;
     border-radius: 0;
     width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    // width: 100%;
+    padding-left: 26px;
+    padding-right: 2px;
   }
 }
 
@@ -115,8 +134,14 @@
     padding-bottom: 16px;
     display: grid;
     gap: 0;
-    grid-template-columns: 53% 14% 12% 19%;
+    grid-template-columns: 45% 22% 19% 9%;
     border-bottom: 1px solid #EAEAEA;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 470px 225px 190px 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -192,6 +217,24 @@
     justify-self: center;
     align-self: center;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 119px;
+
+    color: #FFF;
+
+    font-size: 12px;
+    text-transform: uppercase;
+    position: absolute;
+    width: 119px;
+    height: 32px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+  }
 }
 
 .prices__swiper .prices__swiper-pagination {
@@ -216,6 +259,10 @@
   @media (min-width: $tablet) {
     width: 57%;
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 40%;
   }
 }
 
