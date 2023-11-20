@@ -41,6 +41,10 @@
     top: 25px;
     left: -65px;
   }
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .modal__title {
@@ -98,7 +102,15 @@
 }
 
 .modal__input::placeholder {
-  color: rgba(181, 182, 188, 0.6);
+  color: rgb(233, 233, 236);
+}
+
+.modal__input:hover {
+  border-color: #a8a8a8a2;
+}
+
+.modal__input:hover::placeholder {
+  color: #a8a8a8a2;
 }
 
 .modal__text {
