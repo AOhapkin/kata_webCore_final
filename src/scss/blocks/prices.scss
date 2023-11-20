@@ -25,12 +25,15 @@
   }
 }
 
-.prices__swiper {
+.prices .prices__swiper {
   // background: pink;
   // margin-bottom: 10px;
 
   @media (min-width: $tablet) {
+    padding-top: 45px;
     margin-bottom: 25px;
+    border-radius: 6px;
+    overflow: visible;
   }
 
   @media (min-width: $desktop) {
@@ -38,24 +41,47 @@
   }
 }
 
-.prices__swiper-wrapper {
+.prices__swiper .prices__swiper-wrapper {
   padding: 16px;
   padding-right: 0;
   padding-bottom: 30px;
   align-items: stretch;
 
   @media (min-width: $tablet) {
+    width: 99%;
+    padding-top: 0;
+    padding-bottom: 0;
     flex-direction: column;
+    background-color: #ffffff;
+    // box-sizing: border-box;
+    transform: none;
   }
 }
 
-.prices__header {
-  display: none;
-}
+// .prices__header {
+//   display: none;
+
+//   @media (min-width: $tablet) {
+//     display: block;
+//     display: grid;
+//     grid-template-columns: 55% 12% 12% 21%;
+//   }
+// }
+
+// .prices__header span {
+//   padding: 16px;
+// }
 
 .prices__slide {
   background-color: #ffffff;
   border-radius: 6px;
+
+  @media (min-width: $tablet) {
+    // padding-left: 20px;
+    // padding-right: 20px;
+    border-radius: 0;
+    width: 100%;
+  }
 }
 
 .prices__slide:hover {
@@ -79,6 +105,25 @@
   font-weight: 400;
   line-height: 18px; /* 128.571% */
   letter-spacing: 0.2px;
+
+  @media (min-width: $tablet) {
+    width: 99%;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 53% 14% 12% 19%;
+    border-bottom: 1px solid #EAEAEA;
+  }
+}
+
+.prices__name {
+
+  @media (min-width: $tablet) {
+    position: relative;
+    align-self: center;
+  }
 }
 
 .prices__name span {
@@ -88,6 +133,17 @@
   font-style: normal;
   font-weight: 500;
   line-height: 16px; /* 114.286% */
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.prices__value {
+  @media (min-width: $tablet) {
+    position: relative;
+    align-self: center;
+  }
 }
 
 .prices__value span {
@@ -97,6 +153,17 @@
   font-style: normal;
   font-weight: 500;
   line-height: 16px; /* 114.286% */
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.prices__time {
+  @media (min-width: $tablet) {
+    position: relative;
+    align-self: center;
+  }
 }
 
 .prices__time span {
@@ -106,6 +173,10 @@
   font-style: normal;
   font-weight: 500;
   line-height: 16px; /* 114.286% */
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .prices__button {
@@ -113,6 +184,11 @@
   bottom: 16px;
   right: 16px;
   width: 100px;
+  @media (min-width: $tablet) {
+    position: static;
+    justify-self: center;
+    align-self: center;
+  }
 }
 
 .prices__text {
@@ -151,4 +227,36 @@
   background-image: url('../img/svg/icons/button-icon--arrow-right--red.svg');
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+// Prices header
+
+.prices__slide:first-child .prices__name::before {
+  @media (min-width: $tablet) {
+    position: absolute;
+    content: "Ремонтные услуги";
+    top: -54px;
+    z-index: 100;
+    color: #7E7E82;
+  }
+}
+
+.prices__slide:first-child .prices__value::before {
+  @media (min-width: $tablet) {
+    position: absolute;
+    content: "Цена";
+    top: -54px;
+    z-index: 100;
+    color: #7E7E82;
+  }
+}
+
+.prices__slide:first-child .prices__time::before {
+  @media (min-width: $tablet) {
+    position: absolute;
+    content: "Срок";
+    top: -54px;
+    z-index: 100;
+    color: #7E7E82;
+  }
 }
