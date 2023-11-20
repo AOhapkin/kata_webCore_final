@@ -247,6 +247,12 @@
   background-position: center center;
 }
 
+.prices__link:hover {
+  text-decoration: underline;
+  color: red;
+
+}
+
 // Prices header
 
 .prices__slide:first-child .prices__name::before {
