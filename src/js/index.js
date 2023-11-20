@@ -1,5 +1,5 @@
 import '../scss/style.scss'
 import './brands.js'
-import './side-menu.js'
+import './modals.js'
 import './tech-types.js'
 import './prices.js'

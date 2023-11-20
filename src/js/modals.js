@@ -4,6 +4,11 @@ const burgerButton = document.querySelector('.header-button--burger-menu');
 const sideMenu = document.querySelector('.side-menu');
 const closeMenuButton = sideMenu.querySelector('.header-button--close-menu');
 const menuOverlay = document.querySelector('.page__menu-overlay');
+const feedbackButton = sideMenu.querySelector('.header-button--chat');
+
+const feedbackModal = document.querySelector('.modal--feedback');
+const feedbackModalOverlay = feedbackModal.querySelector('.modal__wrapper');
+const feedbackModalCloseButton = feedbackModal.querySelector('.modal__close-button');
 
 burgerButton.addEventListener('click', onBurgerButtonClick);
 
@@ -14,33 +19,58 @@ function onBurgerButtonClick(evt) {
   menuOverlay.classList.add('page__menu-overlay--show');
   menuOverlay.addEventListener('click', onMenuOverlayClick);
   window.addEventListener('keydown', onSideMenuEscButtonClick);
+  feedbackButton.addEventListener('click', onFeedbackButtonClick);
 }
 
 function onCloseMenuButtonClick(evt) {
   evt.preventDefault();
-  sideMenu.classList.remove('side-menu--open');
-  closeMenuButton.removeEventListener('click', onCloseMenuButtonClick);
-  menuOverlay.classList.remove('page__menu-overlay--show');
-  menuOverlay.removeEventListener('click', onMenuOverlayClick);
-  window.removeEventListener('keydown', onSideMenuEscButtonClick);
+  sideMenuClose();
 }
 
 function onMenuOverlayClick(evt) {
   evt.preventDefault();
+  sideMenuClose();
+}
+
+function sideMenuClose() {
   sideMenu.classList.remove('side-menu--open');
   closeMenuButton.removeEventListener('click', onCloseMenuButtonClick);
   menuOverlay.classList.remove('page__menu-overlay--show');
   menuOverlay.removeEventListener('click', onMenuOverlayClick);
   window.removeEventListener('keydown', onSideMenuEscButtonClick);
+  feedbackButton.removeEventListener('click', onFeedbackButtonClick);
 }
 
 function onSideMenuEscButtonClick(evt) {
   evt.preventDefault();
   if (evt.keyCode === 27) {
-    sideMenu.classList.remove('side-menu--open');
-    closeMenuButton.removeEventListener('click', onCloseMenuButtonClick);
-    menuOverlay.classList.remove('page__menu-overlay--show');
-    menuOverlay.removeEventListener('click', onMenuOverlayClick);
-    window.removeEventListener('keydown', onSideMenuEscButtonClick);
+    sideMenuClose();
+    feedbackModal.classList.remove('modal--open');
   }
 }
+
+// modal--feedback
+
+function onFeedbackButtonClick() {
+  showFeedbackModal();
+}
+
+function onFeedbackModalClick(evt) {
+  if (evt.target === feedbackModalCloseButton) {
+    closeFeedbackModal();
+  }
+}
+
+function showFeedbackModal() {
+  feedbackModal.classList.add('modal--open');
+  feedbackModal.addEventListener('click', onFeedbackModalClick);
+}
+
+function closeFeedbackModal() {
+  feedbackModal.classList.remove('modal--open');
+  feedbackModalOverlay.removeEventListener('click', onFeedbackModalOverlayClick);
+}
+
+// modal--call
+
+
