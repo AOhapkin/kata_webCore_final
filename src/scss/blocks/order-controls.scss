@@ -1,11 +1,12 @@
-.order-controls {
-  // width: 300px;
-}
-
 .order-controls__link {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
+}
+
+.order-controls__link:hover {
+  opacity: 0.7;
 }
 
 .order-controls__button-label {
@@ -38,13 +39,4 @@
 .order-controls__button--check-status {
   background-image: url('../img/svg/icons/button-icon--check-status.svg');
   background-size: 20px 20px;
-}
-
-.order-controls__button:focus,
-.order-controls__button:hover {
-  opacity: 0.7;
-}
-
-.order-controls__button:active {
-  opacity: 0.9;
 }
