@@ -34,6 +34,7 @@ function onBurgerButtonClick(evt) {
   closeMenuButton.addEventListener('click', onCloseMenuButtonClick);
   menuOverlay.classList.add('page__menu-overlay--show');
   menuOverlay.addEventListener('click', onMenuOverlayClick);
+  document.body.classList.add('stop-scroll');
 }
 
 function onCloseMenuButtonClick(evt) {
@@ -51,6 +52,7 @@ function sideMenuClose() {
   closeMenuButton.removeEventListener('click', onCloseMenuButtonClick);
   menuOverlay.classList.remove('page__menu-overlay--show');
   menuOverlay.removeEventListener('click', onMenuOverlayClick);
+  document.body.classList.remove('stop-scroll');
 }
 
 function onWindowEscButtonClick(evt) {
@@ -78,10 +80,12 @@ function onFeedbackModalClick(evt) {
 function showFeedbackModal() {
   feedbackModal.classList.add('modal--open');
   feedbackModal.addEventListener('click', onFeedbackModalClick);
+  document.body.classList.add('stop-scroll');
 }
 
 function closeFeedbackModal() {
   feedbackModal.classList.remove('modal--open');
+  document.body.classList.remove('stop-scroll');
 }
 
 // modal--call
@@ -100,11 +104,12 @@ function onCallModalClick(evt) {
 }
 
 function showCallModal() {
-
   callModal.classList.add('modal--open');
   callModal.addEventListener('click', onCallModalClick);
+  document.body.classList.add('stop-scroll');
 }
 
 function closeCallModal() {
   callModal.classList.remove('modal--open');
+  document.body.classList.remove('stop-scroll');
 }
