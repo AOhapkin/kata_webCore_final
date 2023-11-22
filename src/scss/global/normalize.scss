@@ -385,11 +385,14 @@ html {
 }
 
 body {
-  line-height: 1.5;
   min-width: 320px;
   -webkit-font-smoothing: antialiased;
-  font-family: 'TTLakes', sans-serif;
-  font-weight: 400;
+  font-family: "TT Lakes", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1c21;
+  background-color: #f8f8f8;
 }
 /*
   5. Improve media defaults
@@ -454,7 +457,7 @@ a:focus-visible {
   box-shadow: 0 0 30px 4px #b8ffec;
 }
 
-list {
+ul {
   margin: 0;
   padding: 0;
   list-style: none;

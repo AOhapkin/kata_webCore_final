@@ -5,7 +5,6 @@
 @import './global/fonts.scss';
 
 // Blocks
-@import './blocks/button.scss';
 @import './blocks/side-menu.scss';
 @import './blocks/header-button.scss';
 @import './blocks/nav-list.scss';
@@ -26,3 +25,13 @@
 @import './blocks/prices-button.scss';
 @import './blocks/page-footer.scss';
 @import './blocks/modal.scss';
+
+body {
+  min-width: 320px;
+  font-family: "TT Lakes", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1c21;
+  background-color: #f8f8f8;
+}
