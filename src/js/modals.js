@@ -4,8 +4,9 @@ const burgerButton = document.querySelector('.header-button--burger-menu');
 const sideMenu = document.querySelector('.side-menu');
 const closeMenuButton = sideMenu.querySelector('.header-button--close-menu');
 const menuOverlay = document.querySelector('.page__menu-overlay');
-const feedbackButton = sideMenu.querySelector('.header-button--chat');
-const callButton = sideMenu.querySelector('.header-button--phone');
+
+const feedbackButtons = document.querySelectorAll('.header-button--chat');
+const callButtons = document.querySelectorAll('.header-button--phone');
 
 const feedbackModal = document.querySelector('.modal--feedback');
 const feedbackModalCloseButton = feedbackModal.querySelector('.modal__close-button');
@@ -13,11 +14,16 @@ const feedbackModalCloseButton = feedbackModal.querySelector('.modal__close-butt
 const callModal = document.querySelector('.modal--call');
 const callModalCloseButton = callModal.querySelector('.modal__close-button');
 
-// const callModal = document.querySelector('.modal--call');
-
 burgerButton.addEventListener('click', onBurgerButtonClick);
-feedbackButton.addEventListener('click', onFeedbackButtonClick);
-callButton.addEventListener('click', onCallButtonClick);
+
+feedbackButtons.forEach((button) => {
+  button.addEventListener('click', onFeedbackButtonClick);
+})
+
+callButtons.forEach((button) => {
+  button.addEventListener('click', onCallButtonClick);
+})
+
 window.addEventListener('keydown', onWindowEscButtonClick);
 
 function onBurgerButtonClick(evt) {
@@ -46,7 +52,7 @@ function sideMenuClose() {
 }
 
 function onWindowEscButtonClick(evt) {
-  evt.preventDefault();
+  console.log(evt.keyCode);
   if (evt.keyCode === 27) {
     sideMenuClose();
     feedbackModal.classList.remove('modal--open');
