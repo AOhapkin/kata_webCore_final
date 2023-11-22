@@ -56,10 +56,8 @@ function sideMenuClose() {
 }
 
 function onWindowEscButtonClick(evt) {
-  console.log(evt.keyCode);
   if (evt.keyCode === 27) {
     sideMenuClose();
-    feedbackModal.classList.remove('modal--open');
     closeFeedbackModal();
     closeCallModal();
   }
@@ -95,9 +93,6 @@ function onCallButtonClick() {
 }
 
 function onCallModalClick(evt) {
-  console.log('here');
-  console.log(evt.target);
-
   if (evt.target === callModalCloseButton || evt.target.classList.contains('modal__overlay')) {
     closeCallModal();
   }
