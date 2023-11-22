@@ -443,6 +443,7 @@ button {
 }
 
 a {
+  font: inherit;
   color: inherit;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -453,14 +454,7 @@ a:focus-visible {
   box-shadow: 0 0 30px 4px #b8ffec;
 }
 
-.btn {
-  &:focus-visible {
-    outline: none;
-    box-shadow: 0 0 3px 3px #ff3e79;
-  }
-}
-
-.list-reset {
+list {
   margin: 0;
   padding: 0;
   list-style: none;
