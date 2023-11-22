@@ -9,9 +9,11 @@ const feedbackButtons = document.querySelectorAll('.header-button--chat');
 const callButtons = document.querySelectorAll('.header-button--phone');
 
 const feedbackModal = document.querySelector('.modal--feedback');
+const feedbackOverlay = feedbackModal.querySelector('.modal__overlay');
 const feedbackModalCloseButton = feedbackModal.querySelector('.modal__close-button');
 
 const callModal = document.querySelector('.modal--call');
+const callOverlay = callModal.querySelector('.modal__overlay');
 const callModalCloseButton = callModal.querySelector('.modal__close-button');
 
 burgerButton.addEventListener('click', onBurgerButtonClick);
@@ -68,7 +70,7 @@ function onFeedbackButtonClick() {
 }
 
 function onFeedbackModalClick(evt) {
-  if (evt.target === feedbackModalCloseButton) {
+  if (evt.target === feedbackModalCloseButton || evt.target.classList.contains('modal__overlay')) {
     closeFeedbackModal();
   }
 }
@@ -92,7 +94,7 @@ function onCallModalClick(evt) {
   console.log('here');
   console.log(evt.target);
 
-  if (evt.target === callModalCloseButton) {
+  if (evt.target === callModalCloseButton || evt.target.classList.contains('modal__overlay')) {
     closeCallModal();
   }
 }
@@ -100,7 +102,7 @@ function onCallModalClick(evt) {
 function showCallModal() {
 
   callModal.classList.add('modal--open');
-  callModalCloseButton.addEventListener('click', onCallModalClick);
+  callModal.addEventListener('click', onCallModalClick);
 }
 
 function closeCallModal() {
