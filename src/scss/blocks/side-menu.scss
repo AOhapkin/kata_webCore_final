@@ -10,8 +10,9 @@
   background: #ffffff;
   box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20);
 
+  visibility: hidden;
   transform: translateX(-120%);
-  transition: transform 0.3s ease-in-out;
+  transition: visibility 0.3s ease, transform 0.3s ease;
 
   @media (min-width: $tablet) {
     width: 320px;
@@ -28,6 +29,7 @@
 }
 
 .side-menu--open {
+  visibility: visible;
   transform: none;
 }
 
