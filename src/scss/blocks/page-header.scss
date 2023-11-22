@@ -8,6 +8,7 @@
 }
 
 .page-header__wrapper {
+  position: relative;
   padding: 19px 16px;
   display: flex;
   justify-content: flex-start;
@@ -17,6 +18,36 @@
   @media (min-width: $tablet) {
     padding: 19px 24px;
     gap: 18px;
+  }
+}
+
+.page-header__wrapper::before {
+  @media (min-width: $tablet) {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 32px;
+    top: 50%;
+    left: 85px;
+    transform: translateY(-50%);
+    border-radius: 1px;
+    background: #eaeaea;
+  }
+}
+
+.page-header__wrapper::after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 32px;
+  top: 50%;
+  right: 130px;
+  transform: translateY(-50%);
+  border-radius: 1px;
+  background: #eaeaea;
+
+  @media (min-width: $tablet) {
+    right: 140px;
   }
 }
 
