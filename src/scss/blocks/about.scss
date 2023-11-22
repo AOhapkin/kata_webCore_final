@@ -101,11 +101,16 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  transition: height 0.3s;
 
   @media (min-width: $tablet) {
     width: 88%;
     max-height: 160px;
   }
+}
+
+.about__text-wrapper--open {
+  max-height: 100%;
 }
 
 .about__text-content {

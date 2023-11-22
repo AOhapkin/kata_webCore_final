@@ -1,4 +1,5 @@
 import '../scss/style.scss'
+import './about.js'
 import './brands.js'
 import './modals.js'
 import './tech-types.js'
