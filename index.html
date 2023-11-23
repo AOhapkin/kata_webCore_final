@@ -22,7 +22,7 @@
         <h3 class="modal__title">Обратная связь</h3>
         <form class="modal__form">
           <input class="modal__input" type="text" name="name" id="#name" placeholder="Имя" required>
-          <input class="modal__input" type="tel" name="phone" id="#phone" placeholder="Телефон" required>
+          <input class="modal__input" type="tel" name="phone-feedback" id="#phone-feedback" placeholder="Телефон" required>
           <input class="modal__input" type="email" name="email" id="#email" placeholder="Электронная почта" required>
           <textarea class="modal__input modal__input--textarea" name="message" id="#message" rows="5" placeholder="Сообщение" required></textarea>
           <p class="modal__text">
@@ -45,7 +45,7 @@
         </button>
         <h3 class="modal__title">Заказать звонок</h3>
         <form class="modal__form">
-          <input class="modal__input" type="text" name="phone" id="#phone" placeholder="Телефон" required>
+          <input class="modal__input" type="text" name="phone-callback" id="#phone-callback" placeholder="Телефон" required>
           <p class="modal__text">
             Нажимая “отправить”, вы даете согласие на 
             <a class="modal__link" href="#">обработку персональных данных</a> и соглашаетесь с нашей 
@@ -133,20 +133,20 @@
           <div class="contacts side-menu__contacts">
             <ul class="contacts__list">
               <li class="contacts__item">
-                <button class="header-button header-button--phone" href="tel:+88008908900"><span class="visually-hidden">Позвонить нам</span></button>
+                <button class="header-button header-button--phone"><span class="visually-hidden">Позвонить нам</span></button>
               </li>
               <li class="contacts__item">
                 <button class="header-button header-button--chat" href="#"><span class="visually-hidden">Написать нам в чат</span></button>
               </li>
               <li class="contacts__item">
-                <button class="header-button header-button--profile" href="#"><span class="visually-hidden">Зайти в личный кабинет</span></button>
+                <button class="header-button header-button--profile"><span class="visually-hidden">Зайти в личный кабинет</span></button>
               </li>
             </ul>
             <a class="contacts__mail" href="mailto:mail@cps.com"><span class="visually-hidden">Написать нам на почту </span>mail@cps.com</a>
             <a class="contacts__phone" href="tel:+88008908900"><span class="visually-hidden">Наш номер телефона </span>8&nbsp;800&nbsp;890&nbsp;8900</a>
           </div>
+          <span class="visually-hidden">Поменять язык</span>
           <ul class="change-language side-menu__change-language">
-            <span class="visually-hidden">Поменять язык</span>
             <li class="change-language__item">
               <a class="change-language__link change-language__link--russian change-language__link--current">
                 <span class="visually-hidden">Русский язык</span>
@@ -400,15 +400,15 @@
               <li class="swiper-slide prices__slide">
                 <div class="prices__card">
                   <p class="prices__name">
-                    <span>Ремонтные услуги</span>
+                    <span class="prices__title">Ремонтные услуги</span>
                     Диагностика
                   </p>
                   <p class="prices__value">
-                    <span>Цена</span>
+                    <span class="prices__title">Цена</span>
                     Бесплатно
                   </p>
                   <p class="prices__time">
-                    <span>Срок</span>
+                    <span class="prices__title">Срок</span>
                     30 мин
                   </p>
                   <button class="prices-button prices__button">Заказать</button>
@@ -417,15 +417,15 @@
               <li class="swiper-slide prices__slide">
                 <div class="prices__card">
                   <p class="prices__name">
-                    <span>Ремонтные услуги</span>
+                    <span class="prices__title">Ремонтные услуги</span>
                     Замена дисплея
                   </p>
                   <p class="prices__value">
-                    <span>Цена</span>
+                    <span class="prices__title">Цена</span>
                     1 000 ₽
                   </p>
                   <p class="prices__time">
-                    <span>Срок</span>
+                    <span class="prices__title">Срок</span>
                     30-120 мин
                   </p>
                   <button class="prices-button prices__button">Заказать</button>
@@ -434,15 +434,15 @@
               <li class="swiper-slide prices__slide">
                 <div class="prices__card">
                   <p class="prices__name">
-                    <span>Ремонтные услуги</span>
+                    <span class="prices__title">Ремонтные услуги</span>
                     Замена полифонического динамика
                   </p>
                   <p class="prices__value">
-                    <span>Цена</span>
+                    <span class="prices__title">Цена</span>
                     1 000 ₽
                   </p>
                   <p class="prices__time">
-                    <span>Срок</span>
+                    <span class="prices__title">Срок</span>
                     30-120 мин
                   </p>
                   <button class="prices-button prices__button">Заказать</button>
@@ -451,15 +451,15 @@
               <li class="swiper-slide prices__slide">
                 <div class="prices__card">
                   <p class="prices__name">
-                    <span>Ремонтные услуги</span>
+                    <span class="prices__title">Ремонтные услуги</span>
                     Тестирование с выдачей технического заключения
                   </p>
                   <p class="prices__value">
-                    <span>Цена</span>
+                    <span class="prices__title">Цена</span>
                     1 000 ₽
                   </p>
                   <p class="prices__time">
-                    <span>Срок</span>
+                    <span class="prices__title">Срок</span>
                     30-120 мин
                   </p>
                   <button class="prices-button prices__button">Заказать</button>
@@ -468,15 +468,15 @@
               <li class="swiper-slide prices__slide">
                 <div class="prices__card">
                   <p class="prices__name">
-                    <span>Ремонтные услуги</span>
+                    <span class="prices__title">Ремонтные услуги</span>
                     Замена программного обеспечения
                   </p>
                   <p class="prices__value">
-                    <span>Цена</span>
+                    <span class="prices__title">Цена</span>
                     1 000 ₽
                   </p>
                   <p class="prices__time">
-                    <span>Срок</span>
+                    <span class="prices__title">Срок</span>
                     30-120 мин
                   </p>
                   <button class="prices-button prices__button">Заказать</button>
