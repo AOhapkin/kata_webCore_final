@@ -63,29 +63,16 @@
     background-color: #ffffff;
     // box-sizing: border-box;
     transform: none;
+    border-radius: 6px;
+    overflow: hidden;
   }
 
   @media (min-width: $desktop) {
     // overflow: hidden;
     padding-left: 0;
-    border-radius: 6px;
     width: 1030px;
   }
 }
-
-// .prices__header {
-//   display: none;
-
-//   @media (min-width: $tablet) {
-//     display: block;
-//     display: grid;
-//     grid-template-columns: 55% 12% 12% 21%;
-//   }
-// }
-
-// .prices__header span {
-//   padding: 16px;
-// }
 
 .prices__swiper-wrapper .prices__slide {
   background-color: #ffffff;
@@ -99,7 +86,7 @@
   }
 
   @media (min-width: $desktop) {
-    // width: 100%;
+    width: auto;
     padding-left: 26px;
     padding-right: 2px;
   }
@@ -107,6 +94,9 @@
 
 .prices__slide:hover {
   opacity: 0.7;
+  @media (min-width: $tablet) {
+    opacity: 1;
+  }
 }
 
 .prices__card {
@@ -145,8 +135,13 @@
   }
 }
 
-.prices__name {
+.prices__slide:last-child .prices__card {
+  @media (min-width: $tablet) {
+    border-bottom: none;
+  }
+}
 
+.prices__name {
   @media (min-width: $tablet) {
     position: relative;
     align-self: center;
@@ -276,32 +271,40 @@
 
 // Prices header
 
-.prices__slide:first-child .prices__name::before {
+.prices__slide:first-child .prices__title {
   @media (min-width: $tablet) {
+    display: block;
     position: absolute;
-    content: "Ремонтные услуги";
-    top: -54px;
-    z-index: 100;
-    color: #7E7E82;
+    top: -50px;
   }
 }
 
-.prices__slide:first-child .prices__value::before {
-  @media (min-width: $tablet) {
-    position: absolute;
-    content: "Цена";
-    top: -54px;
-    z-index: 100;
-    color: #7E7E82;
-  }
-}
+// .prices__slide:first-child .prices__name::before {
+//   @media (min-width: $tablet) {
+//     position: absolute;
+//     content: "Ремонтные услуги";
+//     top: -54px;
+//     z-index: 100;
+//     color: #7E7E82;
+//   }
+// }
 
-.prices__slide:first-child .prices__time::before {
-  @media (min-width: $tablet) {
-    position: absolute;
-    content: "Срок";
-    top: -54px;
-    z-index: 100;
-    color: #7E7E82;
-  }
-}
+// .prices__slide:first-child .prices__value::before {
+//   @media (min-width: $tablet) {
+//     position: absolute;
+//     content: "Цена";
+//     top: -54px;
+//     z-index: 100;
+//     color: #7E7E82;
+//   }
+// }
+
+// .prices__slide:first-child .prices__time::before {
+//   @media (min-width: $tablet) {
+//     position: absolute;
+//     content: "Срок";
+//     top: -54px;
+//     z-index: 100;
+//     color: #7E7E82;
+//   }
+// }
