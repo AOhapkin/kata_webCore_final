@@ -1576,7 +1576,6 @@ ul {
     background-color: #ffffff;
     transform: none;
     border-radius: 6px;
-    overflow: hidden;
   }
 }
 @media (min-width: 1440px) {
@@ -1592,7 +1591,6 @@ ul {
 }
 @media (min-width: 768px) {
   .prices__swiper-wrapper .prices__slide {
-    border-radius: 0;
     width: 100%;
   }
 }
@@ -1785,6 +1783,7 @@ ul {
     display: block;
     position: absolute;
     top: -50px;
+    color: #7E7E82;
   }
 }
 
