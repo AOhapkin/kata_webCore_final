@@ -36,7 +36,6 @@
     padding-top: 45px;
     padding-right: 24px;
     margin-bottom: 25px;
-    // border-radius: 6px;
     overflow: visible;
   }
 
@@ -50,6 +49,7 @@
 }
 
 .prices__swiper .prices__swiper-wrapper {
+  // background-color: pink;
   padding: 16px;
   padding-right: 0;
   padding-bottom: 30px;
@@ -64,11 +64,9 @@
     // box-sizing: border-box;
     transform: none;
     border-radius: 6px;
-    overflow: hidden;
   }
 
   @media (min-width: $desktop) {
-    // overflow: hidden;
     padding-left: 0;
     width: 1030px;
   }
@@ -81,7 +79,7 @@
   @media (min-width: $tablet) {
     // padding-left: 20px;
     // padding-right: 20px;
-    border-radius: 0;
+    // border-radius: 0;
     width: 100%;
   }
 
@@ -276,35 +274,6 @@
     display: block;
     position: absolute;
     top: -50px;
+    color: #7E7E82;
   }
 }
-
-// .prices__slide:first-child .prices__name::before {
-//   @media (min-width: $tablet) {
-//     position: absolute;
-//     content: "Ремонтные услуги";
-//     top: -54px;
-//     z-index: 100;
-//     color: #7E7E82;
-//   }
-// }
-
-// .prices__slide:first-child .prices__value::before {
-//   @media (min-width: $tablet) {
-//     position: absolute;
-//     content: "Цена";
-//     top: -54px;
-//     z-index: 100;
-//     color: #7E7E82;
-//   }
-// }
-
-// .prices__slide:first-child .prices__time::before {
-//   @media (min-width: $tablet) {
-//     position: absolute;
-//     content: "Срок";
-//     top: -54px;
-//     z-index: 100;
-//     color: #7E7E82;
-//   }
-// }
