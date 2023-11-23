@@ -1463,7 +1463,6 @@ ul {
   display: flex;
   background: #fff;
   border-radius: 6px;
-  border: 1px solid #eaeaea;
 }
 @media (min-width: 768px) {
   .tech-types .tech-types__slide {
