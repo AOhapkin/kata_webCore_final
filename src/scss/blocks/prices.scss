@@ -153,36 +153,10 @@
   }
 }
 
-.prices__name span {
-  display: block;
-  color: #7E7E82;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16px; /* 114.286% */
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
-
 .prices__value {
   @media (min-width: $tablet) {
     position: relative;
     align-self: center;
-  }
-}
-
-.prices__value span {
-  display: block;
-  color: #7E7E82;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16px; /* 114.286% */
-
-  @media (min-width: $tablet) {
-    display: none;
   }
 }
 
@@ -193,7 +167,7 @@
   }
 }
 
-.prices__time span {
+.prices__title {
   display: block;
   color: #7E7E82;
   font-size: 14px;
