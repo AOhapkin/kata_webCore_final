@@ -11,7 +11,7 @@ function onShowMoreAboutButtonClick() {
     showMoreAboutButton.textContent = 'Скрыть';
     isAboutTextCollapsed = false;
   } else {
-    showMoreAboutButton.textContent = 'Показать все';
+    showMoreAboutButton.textContent = 'Читать далее';
     isAboutTextCollapsed = true;
   }
 }
